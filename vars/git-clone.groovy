@@ -1,5 +1,5 @@
-def call() {
+def call(string giturl, string branch) {
   echo "Cloning the code"
-  git url: "https://github.com/AkshatPareek9/project-django-notes-app.git", branch: "main"
+  git url: ${giturl}, branch: ${branch}
   echo "Cloning successfull"
 }
